@@ -45,7 +45,6 @@ while computer_score < 5 and user_score < 5 :
         print("computer choice :",computer_choice)
         print("user_score:",user_score ,"|","computer_choice:",computer_score)
 
-
     elif computer_choice == "scissors" and user_choice == "rock" :
         user_score += 1
         print("computer choice :",computer_choice)
