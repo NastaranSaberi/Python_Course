@@ -1,6 +1,3 @@
-import re
-
-
 weight = float(input("Please enter your weight (kilogram):"))
 height = float(input("Please enter your height (cm):"))
 
