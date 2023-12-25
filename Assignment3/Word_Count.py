@@ -1,5 +1,3 @@
-from posixpath import split
-
 s = input("Enter your sentence :")
 word_count = len(s.split())
 
