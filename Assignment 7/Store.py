@@ -2,7 +2,6 @@ from pyfiglet import figlet_format
 import qrcode
 from termcolor import colored
 
-
 def add_product():
     new_product = {}
     n= int(input('How many products do you want to add?'))
@@ -14,7 +13,6 @@ def add_product():
         PRODUCTS.append(new_product)
         
     show_new_list()
-
 
 
 def Edit_product():
@@ -35,7 +33,6 @@ def Edit_product():
             show_new_list()
 
 
-
 def Delete_product():
     show_list()
     delete_name = input('Enter the product name you want to delete:')
@@ -45,7 +42,6 @@ def Delete_product():
             break
 
     show_new_list()
-
 
 
 def Search_product():
@@ -87,14 +83,12 @@ def buy():
             purchasing_process()
             
 
-
 def purchasing_process():
     choice_buy = int(input("Do you want another product ? (1-Yes 2-No)"))
     if choice_buy == 1:
         buy()
     elif choice_buy == 2:
         store()
-
 
 
 def qr_code():
@@ -111,12 +105,9 @@ def qr_code():
     store()
 
 
-
 def show_list():
     for i in range(len(PRODUCTS)):
         print(PRODUCTS[i])
-
-
 
 
 def exit_shopping():
@@ -132,12 +123,9 @@ def exit_shopping():
     exit()
 
 
-
-
 def show_list_1():
     show_list()
     store()
-
 
 
 def show_new_list():
@@ -148,7 +136,6 @@ def show_new_list():
         store()
     elif choice_show == 2:
         store()
-
 
 
 def load():
@@ -170,8 +157,6 @@ PRODUCTS = []
 load()
 
 
-
-
 def show_menu():
     print('1-Add Product')
     print('2-Edit Product')
@@ -180,11 +165,8 @@ def show_menu():
     print('5-Show List')
     print('6-Buy')
     print('7-Qr Code')
-    print('8-Exit')
-    
+    print('8-Exit')  
 
-
-    
 
 def store():
     print((colored(figlet_format("Nastaran Stor"), color="magenta")))
@@ -209,9 +191,3 @@ def store():
         exit_shopping()
 
 store()
-
-   
-
-
-
-
