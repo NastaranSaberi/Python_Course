@@ -8,21 +8,21 @@ This Python script utilizes the Telebot library to create a Telegram bot with va
 
 **Custom Keyboard:** It defines a custom keyboard with options like Start, Game, Age, Voice, Max, Argmax, Qrcode, and Help.
 
-**Start Command:** The **"/start"** command greets the user by their first name and displays the custom keyboard.
+**Start Command:** The "/start" command greets the user by their first name and displays the custom keyboard.
 
-**Game Command:** The **"/game"** command initiates a number guessing game. The bot randomly selects a number between 1 and 10, and the user attempts to guess it. Feedback is provided based on whether the guess is higher or lower than the target number.
+**Game Command:** The "/game" command initiates a number guessing game. The bot randomly selects a number between 1 and 10, and the user attempts to guess it. Feedback is provided based on whether the guess is higher or lower than the target number.
 
-**Age Command:** The **"/age"** command calculates the user's age based on their input date of birth in Solar Hijri format.
+**Age Command:** The "/age" command calculates the user's age based on their input date of birth in Solar Hijri format.
 
-**Voice Command:** The **"/voice"** command converts the user's input sentence into speech using the Google Text-to-Speech (gTTS) library and sends it as a voice message.
+**Voice Command:** The "/voice" command converts the user's input sentence into speech using the Google Text-to-Speech (gTTS) library and sends it as a voice message.
 
-**Max Command:** The **"/max"** command calculates the maximum value from a list of numbers provided by the user.
+**Max Command:** The "/max" command calculates the maximum value from a list of numbers provided by the user.
 
-**Argmax Command**: The **"/argmax"** command finds the index of the maximum value from a list of numbers provided by the user.
+**Argmax Command**: The "/argmax" command finds the index of the maximum value from a list of numbers provided by the user.
 
-**Qrcode Command:** The **"/qrcode"** command generates a QR code from the user's input text and sends it as a photo.
+**Qrcode Command:** The "/qrcode" command generates a QR code from the user's input text and sends it as a photo.
 
-**Help Command:** The **"/help"** command displays a help message listing all available commands and their descriptions.
+**Help Command:** The "/help" command displays a help message listing all available commands and their descriptions.
 
 
 
