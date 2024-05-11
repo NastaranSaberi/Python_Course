@@ -2,6 +2,8 @@
 
 This Python script utilizes the Telebot library to create a Telegram bot with various functionalities. Here's a rundown of the key features :
 
+
+
 **Initialization:** The script initializes the Telegram bot using your API token.
 
 **Custom Keyboard:** It defines a custom keyboard with options like Start, Game, Age, Voice, Max, Argmax, Qrcode, and Help.
