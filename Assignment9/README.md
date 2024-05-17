@@ -46,3 +46,12 @@ The libraries used in this script are:
 **qrcode:** Utilized for generating QR codes.
 
 These libraries provide various features and capabilities for performing different tasks within this Telegram bot.
+
+
+
+--- 
+
+
+
+**Telegram Bot Id :** @NastaranPythonBot
+
