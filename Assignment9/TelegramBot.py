@@ -52,27 +52,36 @@ def handle_messages(message):
 
 ########## Game command ##########
 @bot.message_handler(commands=['game'])
+target_number = None
+@bot.message_handler(commands=['game'])
 def start_game(message):
     global target_number
+    target_number = random.randint(1, 10)
 
     markup = telebot.types.ReplyKeyboardMarkup(row_width=1)
     new_game_button = types.KeyboardButton('New Game')
     markup.add(new_game_button)
 
-    target_number = random.randint(1, 10)
-    bot.send_message(message.chat.id, "Guess a number between 1 and 10." , reply_markup=markup)
+    bot.send_message(message.chat.id, "Guess a number between 1 and 10.", reply_markup=markup)
     bot.register_next_step_handler(message, guess_number)
 
 def guess_number(message):
-    guess = int(message.text)
-    if guess < target_number:
-        bot.reply_to(message, "Go higher ⬆️.")
-        bot.register_next_step_handler(message, guess_number)
-    elif guess > target_number:
-        bot.reply_to(message, "Go lower ⬇️.")
-        bot.register_next_step_handler(message, guess_number)
-    elif guess == target_number:
-        bot.reply_to(message, "You win 🏆.")
+    if message.text.isdigit():
+        guess = int(message.text)
+        if guess < target_number:
+            bot.reply_to(message, "Go higher ⬆️.")
+            bot.register_next_step_handler(message, guess_number)
+        elif guess > target_number:
+            bot.reply_to(message, "Go lower ⬇️.")
+            bot.register_next_step_handler(message, guess_number)
+        elif guess == target_number:
+            bot.reply_to(message, "You win 🏆.", reply_markup=my_keyboard)
+    else:
+        if message.text == 'New Game':
+            start_game(message)
+        else:
+            bot.reply_to(message, "Please enter a valid number between 1 and 10.")
+            bot.register_next_step_handler(message, guess_number)
 
 @bot.message_handler(func=lambda message: message.text == 'New Game')
 def new_game(message):
@@ -112,6 +121,7 @@ def max_message(message):
 
 def calculate_max(message):
     num_list = message.text.split(",")
+    num_list = [int(num) for num in num_list]
     max_number = max(num_list)
     bot.reply_to(message, f"The maximum value is {max_number} ." )
 
@@ -124,6 +134,7 @@ def argmax_message(message):
 
 def calculate_argmax(message):
     num_list = message.text.split(",")
+    num_list = [int(num) for num in num_list]
     max_index = num_list.index(max(num_list))
     bot.reply_to(message, f"The index of the maximum value is: {max_index}")
 
