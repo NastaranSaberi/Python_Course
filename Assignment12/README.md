@@ -6,4 +6,4 @@ In this project, we designed a robust Video Media Management Software to efficie
 
 To enhance user interaction and functionality, the project uses several Python libraries. The termcolor library is utilized for color-coded terminal output, which helps in distinguishing different messages and statuses. The **pyfiglet** library is used to generate stylish ASCII art for a more engaging user interface. For downloading media, the **pytube** library facilitates the retrieval of video content from URLs, ensuring that users can directly access media files through the application. The **Database** class handles the persistence of media data by reading from and writing to a text file, ensuring that the media collection is maintained across sessions.
 
-**Run the Application:** Execute the **main.py** file to start the application.
+**Run the Application:** Execute the **main.py** file to start the program.
