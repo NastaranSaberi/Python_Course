@@ -25,5 +25,6 @@ This project demonstrates the creation of a grid of alternating red and blue dia
 ![Screen Shot](Images/img2.jpg)
 
 **How to Run:**
+
 To run this project, you need to install the arcade library.
 Once the library is installed, you can execute the **complex_loop.py** file to display the grid of diamonds.
