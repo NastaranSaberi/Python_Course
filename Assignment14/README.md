@@ -15,10 +15,15 @@ ____
 **Features**
 
 Spaceship Movement: Move left and right to dodge enemies.
+
 Firing Mechanism: Shoot bullets to destroy enemies.
+
 Enemies: Enemies spawn periodically and move downward.
+
 Scoring: Earn points for each enemy destroyed.
+
 Lives: Lose a life if an enemy collides with your spaceship.
+
 Difficulty: Enemies increase in speed over time.
 
 ____
