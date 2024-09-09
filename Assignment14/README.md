@@ -5,8 +5,8 @@
 Spaceship Game is a simple arcade-style game where you control a spaceship to shoot down enemies and avoid collisions. The game includes basic features such as scoring, lives, and gradually increasing difficulty.
 
 
-![Screen Shot](Images/img1.jpg)
-![Screen Shot](Images/img2.jpg)
+<img src="Images/img1.jpg" width="200" />
+<img src="Images/img2.jpg" width="200" />
 
 
 ____
